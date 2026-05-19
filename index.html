@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NL Sah Preparatory Learning School | Bhowali</title>
+  <!-- SEO Meta Tags -->
+<meta name="title" content="NL Sah Preparatory Learning School | Best School in Bhowali">
+<meta name="description" content="NL Sah Preparatory Learning School, Bhowali offers quality English Medium education from Play School to Class 8 with modern classrooms, experienced teachers, activities, and holistic learning.">
+<meta name="keywords" content="NL Sah School, Bhowali School, English Medium School Bhowali, Preparatory Learning School, Best School in Bhowali, School in Uttarakhand, Play School to Class 8">
+<meta name="author" content="NL Sah Preparatory Learning School">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:title" content="NL Sah Preparatory Learning School">
+<meta property="og:description" content="Providing quality English Medium education from Play School to Class 8 in Bhowali with modern facilities and holistic learning.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/logo.png">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#1d4ed8">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Apple Devices -->
+<link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    :root {
+      --primary: #1d4ed8;
+      --secondary: #2563eb;
+      --light: #f8fbff;
+      --dark: #111827;
+      --gray: #6b7280;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 6%;
+      background: rgba(255,255,255,0.95);
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .logo h2 {
+      font-size: 1.1rem;
+      color: var(--dark);
+      line-height: 1.3;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 120px 6% 80px;
+      background:
+        linear-gradient(135deg, rgba(29,78,216,0.75), rgba(37,99,235,0.65)),
+        url('images/hero.jpg') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 850px;
+      animation: fadeIn 1s ease;
+      background: rgba(255,255,255,0.08);
+      padding: 3rem;
+      border-radius: 28px;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+    }
+
+    .hero h1 {
+      font-size: 3.7rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      color: #f3f4f6;
+      line-height: 1.9;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--primary);
+    }
+
+    section {
+      padding: 90px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--gray);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-content h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+
+    .about-content p {
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .stats {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .stat-card h4 {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .facilities {
+      background: white;
+    }
+
+    .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .facility-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--light);
+      padding: 2rem 1.5rem;
+      border-radius: 22px;
+      transition: 0.3s;
+      box-shadow: var(--shadow);
+    }
+
+    .facility-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(to right, #1d4ed8, #60a5fa);
+    }
+
+    .facility-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .facility-card h3 {
+      margin: 1rem 0;
+      color: var(--dark);
+    }
+
+    .facility-card p {
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      max-width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: 0.4s;
+      box-shadow: var(--shadow);
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    .principal {
+      width: 100%;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      color: white;
+      border-radius: 30px;
+      padding: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .principal img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      margin: auto;
+    }
+
+    .principal h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .principal p {
+      line-height: 1.9;
+      color: #e5e7eb;
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h3 {
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+
+    .contact-card p {
+      margin-bottom: 1rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    .contact-card iframe {
+      width: 100%;
+      height: 280px;
+      border: none;
+      border-radius: 18px;
+      margin-top: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid #d1d5db;
+      font-family: inherit;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    button {
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      color: #d1d5db;
+      margin-top: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      * {
+        max-width: 100%;
+      }
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background: white;
+        width: min(85vw, 280px);
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        transition: 0.3s;
+      }
+
+      .nav-links.active {
+        right: 20px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+      }
+
+      .hero-content {
+        padding: 2rem;
+      }
+
+      .principal {
+        padding: 2rem;
+        border-radius: 24px;
+      }
+
+      .principal img {
+        max-width: 280px;
+      }
+
+      .about,
+      .contact-wrapper,
+      .principal {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 70px 5%;
+      }
+
+      .hero {
+        padding: 130px 5% 80px;
+      }
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-content {
+        padding: 1.6rem;
+        border-radius: 22px;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+
+      .logo h2 {
+        font-size: 0.9rem;
+      }
+
+      .logo img {
+        width: 45px;
+        height: 45px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid img {
+        height: 220px;
+      }
+
+      .facility-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card,
+      .facility-card,
+      .stat-card {
+        padding: 1.5rem;
+      }
+
+      nav {
+        padding: 1rem 5%;
+      }
+    }
+    .fee-section {
+  background: linear-gradient(to bottom, #f8fbff, #eef5ff);
+}
+
+.fee-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.info-card,
+.table-card {
+  background: white;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.info-card h3,
+.table-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.notice-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #f8fbff;
+  transition: 0.3s;
+}
+
+.notice-item:hover {
+  transform: translateY(-3px);
+}
+
+.notice-item span {
+  min-width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.notice-item p {
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+table th {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: var(--gray);
+}
+
+table tr:hover {
+  background: #f8fbff;
+}
+
+.fee-note {
+  margin-top: 1.5rem;
+  padding: 1.3rem;
+  border-radius: 18px;
+  background: #f8fbff;
+}
+
+.fee-note p {
+  color: var(--gray);
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+  .info-card,
+  .table-card {
+    padding: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 700px;
+  }
+
+  .notice-item {
+    padding: 0.9rem;
+  }
+
+  .notice-item span {
+    min-width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+}
+
+.table-scroll-hint {
+  display: none;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-weight: 500;
+  animation: swipeHint 1.8s infinite ease-in-out;
+}
+
+@keyframes swipeHint {
+  0% {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-scroll-hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="School Logo">
+      <h2>NL Sah Preparatory<br>Learning School</h2>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#principal-message">Principal's Message</a>
+      <a href="#fee-structure">Information</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="menu-btn" id="menuBtn">☰</div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Inspiring Young Minds From Play School To Class 8</h1>
+      <p>
+        Welcome to NL Sah Preparatory Learning School, an English Medium institution dedicated to nurturing children from Play School to Class 8 with quality education, creativity, discipline, and holistic development.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary">Explore School</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About Our School</h2>
+      <p>
+        Building a strong educational foundation with values, creativity, discipline, confidence, and joyful learning from the early years to middle school.
+      </p>
+    </div>
+
+    <div class="about">
+      <img src="images/about-school.jpg" alt="School Campus">
+
+      <div class="about-content">
+        <h3>Creating Future Leaders</h3>
+
+        <p>
+          NL Sah Preparatory Learning School is dedicated to nurturing students through quality education and a caring learning environment. From Play School to Class 8, our mission is to help every child grow academically, socially, creatively, and morally.
+        </p>
+
+        <p>
+          As an English Medium institution, we focus on discipline, creativity, communication skills, and practical learning while maintaining a caring and student-friendly atmosphere.
+        </p>
+
+        <div class="stats">
+          <div class="stat-card">
+            <h4>English</h4>
+            <p>Medium</p>
+          </div>
+
+          <div class="stat-card">
+            <h4>9 AM</h4>
+            <p>School Timing</p>
+          </div>
+
+          <div class="stat-card">
+            <h4>4 PM</h4>
+            <p>Office Closes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facilities" id="facilities">
+    <div class="section-title">
+      <h2>Facilities & Activities</h2>
+      <p>
+        Providing students with a safe, supportive, and inspiring environment.
+      </p>
+    </div>
+
+    <div class="facility-grid">
+      <div class="facility-card">
+        <h3>Modern Classrooms</h3>
+        <p>
+          Spacious and comfortable classrooms designed for focused and effective learning.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <h3>Sports & Activities</h3>
+        <p>
+          Encouraging physical fitness, teamwork, confidence, and active participation.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <h3>Qualified Teachers</h3>
+        <p>
+          Dedicated educators committed to student growth and academic success.
+        </p>
+      </div>
+
+      <div class="facility-card">
+        <h3>Safe Environment</h3>
+        <p>
+          Maintaining discipline, safety, and a positive atmosphere for every student.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-title">
+      <h2>School Gallery</h2>
+      <p>
+        A glimpse into school life, activities, achievements, and memorable moments.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Gallery Image">
+      <img src="images/gallery2.jpg" alt="Gallery Image">
+      <img src="images/gallery3.jpg" alt="Gallery Image">
+      <img src="images/gallery4.jpg" alt="Gallery Image">
+      <img src="images/gallery5.jpg" alt="Gallery Image">
+      <img src="images/gallery6.jpg" alt="Gallery Image">
+    </div>
+  </section>
+
+  <section id="principal-message">
+    <div class="principal">
+      <img src="images/principal.jpg" alt="Principal Photo">
+
+      <div>
+        <h2>Principal's Message</h2>
+
+        <p>
+          At NL Sah Preparatory Learning School, we believe every child has unique potential waiting to be nurtured. Our aim is to provide students with quality education, strong values, and the confidence needed to succeed in life.
+          <br><br>
+          We continuously strive to create an environment where students feel inspired to learn, grow, and achieve excellence in every field.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="fee-structure" class="fee-section">
+  <div class="section-title">
+    <h2>Fee Structure & School Information</h2>
+    <p>
+      Academic Session 2026–27 fee details, school updates, facilities, and important notices for parents.
+    </p>
+  </div>
+
+  <div class="fee-wrapper">
+
+    <div class="info-card">
+      <h3>Important Updates</h3>
+
+      <div class="notice-list">
+
+        <div class="notice-item">
+          <span>01</span>
+          <p>
+            The school administration is strengthening infrastructure and upgrading classrooms and facilities for future expansion.
+          </p>
+        </div>
+
+        <div class="notice-item">
+          <span>02</span>
+          <p>
+            Examinations will follow the standard pattern including Unit Tests, Half Yearly, and Final Exams.
+          </p>
+        </div>
+
+        <div class="notice-item">
+          <span>03</span>
+          <p>
+            Laptop facilities are available for Classes VI to VIII to encourage practical and uninterrupted learning.
+          </p>
+        </div>
+
+        <div class="notice-item">
+          <span>04</span>
+          <p>
+            Special preparation classes are conducted for Sainik School entrance examinations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="table-card">
+      <h3>Monthly Fee Structure</h3>
+
+      <div class="table-scroll-hint">
+  <span>← Swipe to view full table →</span>
+</div>
+
+<div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Monthly Fee</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Play Way</td>
+              <td>₹600</td>
+            </tr>
+
+            <tr>
+              <td>Nursery</td>
+              <td>₹775</td>
+            </tr>
+
+            <tr>
+              <td>LKG</td>
+              <td>₹775</td>
+            </tr>
+
+            <tr>
+              <td>UKG</td>
+              <td>₹775</td>
+            </tr>
+
+            <tr>
+              <td>Classes I – III</td>
+              <td>₹800</td>
+            </tr>
+
+            <tr>
+              <td>Classes IV – V</td>
+              <td>₹825</td>
+            </tr>
+
+            <tr>
+              <td>Classes VI – VIII</td>
+              <td>₹850</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="table-card full-width">
+      <h3>Annual Miscellaneous Charges</h3>
+
+      <div class="table-scroll-hint">
+  <span>← Swipe to view full table →</span>
+</div>
+
+<div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Development</th>
+              <th>Exam Fee</th>
+              <th>Educational Visit</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Play Way</td>
+              <td>₹1000</td>
+              <td>—</td>
+              <td>—</td>
+              <td>₹1000</td>
+            </tr>
+
+            <tr>
+              <td>Nursery</td>
+              <td>₹1150</td>
+              <td>₹900</td>
+              <td>—</td>
+              <td>₹2050</td>
+            </tr>
+
+            <tr>
+              <td>LKG & UKG</td>
+              <td>₹1150</td>
+              <td>₹1000</td>
+              <td>—</td>
+              <td>₹2150</td>
+            </tr>
+
+            <tr>
+              <td>Class I</td>
+              <td>₹1000</td>
+              <td>₹1100</td>
+              <td>—</td>
+              <td>₹2100</td>
+            </tr>
+
+            <tr>
+              <td>Classes II – IV</td>
+              <td>₹1100</td>
+              <td>₹1100</td>
+              <td>₹700</td>
+              <td>₹2900</td>
+            </tr>
+
+            <tr>
+              <td>Class V</td>
+              <td>₹1100</td>
+              <td>₹1100</td>
+              <td>₹700</td>
+              <td>₹2900</td>
+            </tr>
+
+            <tr>
+              <td>Classes VI – VIII</td>
+              <td>₹1200</td>
+              <td>₹1150</td>
+              <td>₹700</td>
+              <td>₹3050</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fee-note">
+        <p>
+          Additional stationery charges of <strong>₹150</strong> apply for Nursery, LKG & UKG students.
+        </p>
+
+        <p>
+          Admission Fee for new admissions (2026–27): <strong>₹4000</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>
+        Feel free to reach out for admissions, inquiries, or further information.
+      </p>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <h3>School Information</h3>
+
+        <p><strong>School Name:</strong> NL Sah Preparatory Learning School</p>
+        <p><strong>Classes:</strong> Play School to Class 8</p>
+        <p><strong>Medium:</strong> English</p>
+        <p><strong>Email:</strong> preparatorylearningschool@gmail.com</p>
+        <p><strong>Phone:</strong> 7088937664</p>
+        <p><strong>Office Timing:</strong> 9:00 AM – 4:00 PM</p>
+        <p><strong>Address:</strong>R ehad Road, Bhowali, Nainital</p>
+
+        <iframe
+  src="https://maps.google.com/maps?q=29.3843551,79.5138133&z=15&output=embed"
+  allowfullscreen
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      </div>
+
+      <div class="contact-card">
+        <h3>Send An Inquiry</h3>
+
+        <form
+  action="https://formspree.io/f/xpqnqagk"
+  method="POST"
+  class="contact-form">
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required>
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required>
+
+  <input
+    type="text"
+    name="subject"
+    placeholder="Subject">
+
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    required></textarea>
+
+  <button type="submit">
+    Send Message
+  </button>
+
+</form>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div style="background:white; border-radius:28px; padding:3rem; box-shadow:var(--shadow); display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; align-items:center;">
+      <div>
+        <h2 style="font-size:2rem; margin-bottom:1rem; color:var(--dark);">Admissions Open</h2>
+        <p style="color:var(--gray); line-height:1.8;">
+          Join a nurturing educational environment focused on academic growth, discipline, creativity, and student development.
+        </p>
+      </div>
+
+      <div style="text-align:center;">
+        <a href="#contact" class="btn btn-primary" style="background:var(--primary); color:white;">Apply For Admission</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>NL Sah Preparatory Learning School</h3>
+    <p>
+      © 2026 All Rights Reserved | Designed with care for quality education.
+    </p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+    
+  </script>
+
+</body>
+</html>
+
+<!--
+
+UPLOAD THESE IMAGES INSIDE AN "images" FOLDER:
+
+images/
+│
+├── logo.png
+├── hero.jpg
+├── about-school.jpg
+├── principal.jpg
+├── gallery1.jpg
+├── gallery2.jpg
+├── gallery3.jpg
+├── gallery4.jpg
+├── gallery5.jpg
+└── gallery6.jpg
+
+HOW TO HOST ON GITHUB:
+
+1. Create a GitHub repository
+2. Upload this file as index.html
+3. Upload the images folder
+4. Go to Settings > Pages
+5. Select branch = main
+6. Save
+7. Your website will be live
+
+-->
