@@ -293,26 +293,6 @@
       line-height: 1.7;
     }
 
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      max-width: 100%;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 20px;
-      transition: 0.4s;
-      box-shadow: var(--shadow);
-    }
-
-    .gallery-grid img:hover {
-      transform: scale(1.03);
-    }
-
     .principal {
       width: 100%;
       overflow: hidden;
@@ -521,14 +501,6 @@
         height: 45px;
       }
 
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-grid img {
-        height: 220px;
-      }
-
       .facility-grid,
       .stats {
         grid-template-columns: 1fr;
@@ -712,6 +684,103 @@ table tr:hover {
     align-items: center;
   }
 }
+.gallery-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 280px;
+  gap: 1.2rem;
+
+  overflow-x: auto;
+  padding-bottom: 1rem;
+
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-card {
+  position: relative;
+  height: 240px;
+  border-radius: 24px;
+  overflow: hidden;
+  scroll-snap-align: center;
+  box-shadow: var(--shadow);
+  transition: 0.4s ease;
+  background: white;
+}
+
+.gallery-card.large {
+  height: 320px;
+}
+
+.gallery-card.tall {
+  height: 360px;
+}
+
+.gallery-card.wide {
+  width: 420px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.25),
+    transparent
+  );
+}
+
+@media (max-width: 768px) {
+
+  .gallery-track {
+    grid-auto-columns: 78%;
+    gap: 1rem;
+  }
+
+  .gallery-card {
+    height: 220px;
+    border-radius: 22px;
+  }
+
+  .gallery-card.large,
+  .gallery-card.tall {
+    height: 260px;
+  }
+
+  .gallery-card.wide {
+    width: auto;
+  }
+}
+
+.gallery-hint {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--gray);
+  font-size: 0.95rem;
+  animation: swipeHint 2s infinite;
+}
   </style>
 </head>
 <body>
@@ -837,15 +906,51 @@ table tr:hover {
         A glimpse into school life, activities, achievements, and memorable moments.
       </p>
     </div>
+    <p class="gallery-hint">← Swipe to explore our school moments →</p>
 
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Gallery Image">
-      <img src="images/gallery2.jpg" alt="Gallery Image">
-      <img src="images/gallery3.jpg" alt="Gallery Image">
-      <img src="images/gallery4.jpg" alt="Gallery Image">
-      <img src="images/gallery5.jpg" alt="Gallery Image">
-      <img src="images/gallery6.jpg" alt="Gallery Image">
+    <div class="gallery-wrapper">
+
+  <div class="gallery-track">
+
+    <div class="gallery-card large">
+      <img src="images/gallery1.jpg">
     </div>
+
+    <div class="gallery-card tall">
+      <img src="images/gallery2.jpg">
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/gallery3.jpg">
+    </div>
+
+    <div class="gallery-card tall">
+      <img src="images/gallery4.jpg">
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/gallery5.jpg" >
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/gallery6.jpg" >
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/gallery7.jpg" >
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/gallery8.jpg" >
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/gallery9.jpg" >
+    </div>
+    
+  </div>
+
+</div>
   </section>
 
   <section id="principal-message">
@@ -1076,7 +1181,7 @@ table tr:hover {
         <p><strong>Email:</strong> preparatorylearningschool@gmail.com</p>
         <p><strong>Phone:</strong> 7088937664</p>
         <p><strong>Office Timing:</strong> 9:00 AM – 4:00 PM</p>
-        <p><strong>Address:</strong>R ehad Road, Bhowali, Nainital</p>
+        <p><strong>Address:</strong> Rehad Road, Bhowali, Nainital</p>
 
         <iframe
   src="https://maps.google.com/maps?q=29.3843551,79.5138133&z=15&output=embed"
@@ -1166,32 +1271,3 @@ table tr:hover {
 
 </body>
 </html>
-
-<!--
-
-UPLOAD THESE IMAGES INSIDE AN "images" FOLDER:
-
-images/
-│
-├── logo.png
-├── hero.jpg
-├── about-school.jpg
-├── principal.jpg
-├── gallery1.jpg
-├── gallery2.jpg
-├── gallery3.jpg
-├── gallery4.jpg
-├── gallery5.jpg
-└── gallery6.jpg
-
-HOW TO HOST ON GITHUB:
-
-1. Create a GitHub repository
-2. Upload this file as index.html
-3. Upload the images folder
-4. Go to Settings > Pages
-5. Select branch = main
-6. Save
-7. Your website will be live
-
--->
