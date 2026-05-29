@@ -730,10 +730,21 @@ table tr:hover {
   width: 420px;
 }
 
-.gallery-card img {
+.gallery-card img{
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
+}
+
+.gallery-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+.gallery-card img {
   transition: 0.5s ease;
 }
 
@@ -741,7 +752,13 @@ table tr:hover {
   transform: scale(1.08);
 }
 
-.gallery-card::after {
+/* Prevent zooming while video is playing */
+.gallery-card video {
+  background: #000;
+  cursor: pointer;
+}
+
+.gallery-card:has(img)::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -947,6 +964,12 @@ table tr:hover {
     <div class="gallery-card">
       <img src="images/gallery9.jpg" >
     </div>
+
+    <div class="gallery-card">
+    <video controls playsinline preload="metadata">
+      <source src="images/video1.mp4" type="video/mp4">
+    </video>
+  </div>
     
   </div>
 
@@ -1017,11 +1040,12 @@ table tr:hover {
     <div class="table-card">
       <h3>Monthly Fee Structure</h3>
 
-      <div class="table-scroll-hint">
-  <span>← Swipe to view full table →</span>
-</div>
+      
 
 <div class="table-responsive">
+  <div class="gallery-hint">
+  <span>← Swipe to view full table →</span>
+    </div>
         <table>
           <thead>
             <tr>
@@ -1271,3 +1295,4 @@ table tr:hover {
 
 </body>
 </html>
+
